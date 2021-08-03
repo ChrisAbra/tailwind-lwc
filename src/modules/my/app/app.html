@@ -1,0 +1,55 @@
+<template>
+    <div class=" w-screen h-screen bg-background-100">
+        <div class="content-center w-full max-w-5xl m-auto  p-5 grid grid-cols-1  gap-3">
+            <ui-card>
+                <ui-tab-set variant="vertical" slot="no_padding">
+                    <ui-tab label="Form example">
+                        <ui-card>
+                            <div slot="contents">
+                                <ui-input label="Username" placeholder="Username" name="username" type="text">
+                                </ui-input>
+                                <ui-input label="Password" placeholder="***********" name="password" type="password"
+                                    error="Please choose a password"></ui-input>
+
+                            </div>
+                            <ui-button slot="actions" label="Forgot password" variant="link"></ui-button>
+                            <ui-button slot="actions" label="Sign in" variant="brand"></ui-button>
+
+                        </ui-card>
+                    </ui-tab>
+                    <ui-tab label="Item 2 Example Test">
+                        <div>Content 2</div>
+                        <div>Content 2</div>
+                        <div>Content 2</div>
+                        <div>Content 2</div>
+                        <div>Content 2</div>
+                        <div>Content 2</div>
+                        <div>Content 2</div>
+                        <div>Content 2</div>
+                        <div>Content 2</div>
+                    </ui-tab>
+                    <ui-tab label="Item 3">
+                        <div>Content 3</div>
+                    </ui-tab>
+                </ui-tab-set>
+
+            </ui-card>
+
+            <ui-card title="Card title">
+                <article slot="contents">
+                    Hello there how goes it?
+                    Well thanks
+
+                </article>
+                <ui-button slot="actions" label="Cancel"></ui-button>
+                <ui-button slot="actions" label="Save" variant="brand"></ui-button>
+                <ui-button slot="actions" label="Destructive" variant="destructive"></ui-button>
+                <ui-button slot="actions" label="Success" variant="success"></ui-button>
+                <ui-button slot="actions" label="Destructive text" variant="destructive_text"></ui-button>
+
+            </ui-card>
+        </div>
+
+    </div>
+
+</template>

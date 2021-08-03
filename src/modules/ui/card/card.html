@@ -1,0 +1,17 @@
+<template>
+    <article class={classes.article}>
+        <template if:true={title}>
+            <h2 class={classes.title}>{title}</h2>
+        </template>
+        <div class={noPaddingSlotClass}>
+            <slot name="no_padding" onslotchange={handleNoPaddingSlotChange}>
+            </slot>
+        </div>
+        <slot name="contents">
+        </slot>
+        <slot name="footer" class={classes.footer}>
+        </slot>
+        <slot name="actions" class={classes.actions}>
+        </slot>
+    </article>
+</template>

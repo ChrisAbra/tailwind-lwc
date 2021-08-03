@@ -1,0 +1,17 @@
+<template>
+    <article class={classes.container}>
+
+        <nav class={classes.nav}>
+            <template for:each={tabs} for:item="tab" for:index="index">
+                <button class={tab.labelClasses} onclick={handleTabSelect} data-index={index} key={tab.label}>
+                    {tab.label}
+                </button>
+            </template>
+        </nav>
+
+        <article class={classes.content}>
+            <slot onregistertab={registerTab}>
+            </slot>
+        </article>
+    </article>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <label class="block text-gray-600 text-sm font-bold mb-xs" for={name}>
+        {label}
+    </label>
+    <template if:true={types.text}>
+        <input class={classes.input} id={name} type="text" placeholder={placeholder} onchange={handleChange}>
+    </template>
+    <template if:true={types.password}>
+        <input class={classes.input} id={name} type="password" placeholder={placeholder} onchange={handleChange}>
+    </template>
+
+    <template if:true={error}>
+        <p class="text-red-500 text-xs italic">{error}</p>
+    </template>
+</template>
