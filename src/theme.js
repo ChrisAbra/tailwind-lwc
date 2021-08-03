@@ -6,14 +6,6 @@ export default {
         serif: ['Rufina', 'serif']
     },
     extend: {
-        transitionTimingFunction: {
-            default: 'ease-in-out'
-        },
-        transitionDuration: {
-            sm: 200,
-            md: 400,
-            lg: 600
-        },
         colors: {
             gray: colors.blueGray,
             brand: colors.blue,

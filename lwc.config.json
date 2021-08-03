@@ -4,5 +4,5 @@
             "dir": "src/modules"
         }
     ],
-    "expose": ["ui/button", "ui/tabSet", "ui/tab"]
+    "expose": ["ui/button", "ui/tabSet", "ui/tab", "ui/input", "ui/card"]
 }
